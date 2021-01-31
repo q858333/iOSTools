@@ -16,6 +16,7 @@
 		F763BB6625C6EFE000341E59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB6525C6EFE000341E59 /* main.m */; };
 		F763BB7025C6EFE000341E59 /* ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB6F25C6EFE000341E59 /* ToolsTests.m */; };
 		F763BB7B25C6EFE000341E59 /* ToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB7A25C6EFE000341E59 /* ToolsUITests.m */; };
+		F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		F763BB7625C6EFE000341E59 /* ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB7A25C6EFE000341E59 /* ToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolsUITests.m; sourceTree = "<group>"; };
 		F763BB7C25C6EFE000341E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSafeMutableDictionary.m; sourceTree = "<group>"; };
+		F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSafeMutableDictionary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				F763BB5725C6EFDE00341E59 /* SceneDelegate.m */,
 				F763BB5925C6EFDE00341E59 /* ViewController.h */,
 				F763BB5A25C6EFDE00341E59 /* ViewController.m */,
+				F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */,
+				F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */,
 				F763BB5C25C6EFDE00341E59 /* Main.storyboard */,
 				F763BB5F25C6EFE000341E59 /* Assets.xcassets */,
 				F763BB6125C6EFE000341E59 /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */,
 				F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */,
 				F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
