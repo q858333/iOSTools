@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B45EA9CE27438990002F202D /* DBScrollListVC.m */; };
+		B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B45EA9D4274389AF002F202D /* DBScrollListView.m */; };
+		D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B8CCB268869A83CF107AD /* libPods-Tools.a */; };
 		F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5425C6EFDE00341E59 /* AppDelegate.m */; };
 		F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5725C6EFDE00341E59 /* SceneDelegate.m */; };
 		F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5A25C6EFDE00341E59 /* ViewController.m */; };
@@ -37,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0938B51F5E4591A025DFB517 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
+		A9F71C2314106CD82661CBB5 /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
+		B45EA9CD27438990002F202D /* DBScrollListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBScrollListVC.h; sourceTree = "<group>"; };
+		B45EA9CE27438990002F202D /* DBScrollListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBScrollListVC.m; sourceTree = "<group>"; };
+		B45EA9D3274389AF002F202D /* DBScrollListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBScrollListView.h; sourceTree = "<group>"; };
+		B45EA9D4274389AF002F202D /* DBScrollListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBScrollListView.m; sourceTree = "<group>"; };
+		B88B8CCB268869A83CF107AD /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5025C6EFDE00341E59 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5325C6EFDE00341E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F763BB5425C6EFDE00341E59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +95,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092D56701DD2298BD2BA1C49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9F71C2314106CD82661CBB5 /* Pods-Tools.debug.xcconfig */,
+				0938B51F5E4591A025DFB517 /* Pods-Tools.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		590D7499D56C022A44BEC5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B88B8CCB268869A83CF107AD /* libPods-Tools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B45EA9C627438902002F202D /* ScrolList */ = {
+			isa = PBXGroup;
+			children = (
+				B45EA9CD27438990002F202D /* DBScrollListVC.h */,
+				B45EA9CE27438990002F202D /* DBScrollListVC.m */,
+				B45EA9D3274389AF002F202D /* DBScrollListView.h */,
+				B45EA9D4274389AF002F202D /* DBScrollListView.m */,
+			);
+			path = ScrolList;
+			sourceTree = "<group>";
+		};
 		F763BB4725C6EFDE00341E59 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +130,8 @@
 				F763BB6E25C6EFE000341E59 /* ToolsTests */,
 				F763BB7925C6EFE000341E59 /* ToolsUITests */,
 				F763BB5125C6EFDE00341E59 /* Products */,
+				092D56701DD2298BD2BA1C49 /* Pods */,
+				590D7499D56C022A44BEC5C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +154,7 @@
 				F763BB5725C6EFDE00341E59 /* SceneDelegate.m */,
 				F763BB5925C6EFDE00341E59 /* ViewController.h */,
 				F763BB5A25C6EFDE00341E59 /* ViewController.m */,
+				B45EA9C627438902002F202D /* ScrolList */,
 				F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */,
 				F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */,
 				F763BB5C25C6EFDE00341E59 /* Main.storyboard */,
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F763BB7F25C6EFE000341E59 /* Build configuration list for PBXNativeTarget "Tools" */;
 			buildPhases = (
+				54CD236833BD044A0DCF8EFA /* [CP] Check Pods Manifest.lock */,
 				F763BB4C25C6EFDE00341E59 /* Sources */,
 				F763BB4D25C6EFDE00341E59 /* Frameworks */,
 				F763BB4E25C6EFDE00341E59 /* Resources */,
@@ -266,6 +309,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54CD236833BD044A0DCF8EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F763BB4C25C6EFDE00341E59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,7 +341,9 @@
 			files = (
 				F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */,
 				F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */,
+				B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */,
 				F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */,
+				B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
 				F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */,
 			);
@@ -381,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -434,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,6 +514,7 @@
 		};
 		F763BB8025C6EFE000341E59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F71C2314106CD82661CBB5 /* Pods-Tools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +533,7 @@
 		};
 		F763BB8125C6EFE000341E59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0938B51F5E4591A025DFB517 /* Pods-Tools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
