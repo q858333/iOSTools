@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B45EA9CE27438990002F202D /* DBScrollListVC.m */; };
 		B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B45EA9D4274389AF002F202D /* DBScrollListView.m */; };
+		B49EC3622951BCDC002FE1F8 /* DBRouletteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC35B2951BCDC002FE1F8 /* DBRouletteVC.m */; };
+		B49EC3632951BCDC002FE1F8 /* LMCustomRouletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC35E2951BCDC002FE1F8 /* LMCustomRouletteView.m */; };
+		B49EC3642951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC35F2951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m */; };
+		B49EC36E2951BD0F002FE1F8 /* LoopScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC3662951BD0F002FE1F8 /* LoopScrollVC.m */; };
+		B49EC36F2951BD0F002FE1F8 /* LoopScrollItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC3672951BD0F002FE1F8 /* LoopScrollItemView.m */; };
+		B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC3682951BD0F002FE1F8 /* PlayerView.m */; };
+		B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */; };
 		D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B8CCB268869A83CF107AD /* libPods-Tools.a */; };
 		F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5425C6EFDE00341E59 /* AppDelegate.m */; };
 		F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5725C6EFDE00341E59 /* SceneDelegate.m */; };
@@ -46,6 +53,20 @@
 		B45EA9CE27438990002F202D /* DBScrollListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBScrollListVC.m; sourceTree = "<group>"; };
 		B45EA9D3274389AF002F202D /* DBScrollListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBScrollListView.h; sourceTree = "<group>"; };
 		B45EA9D4274389AF002F202D /* DBScrollListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBScrollListView.m; sourceTree = "<group>"; };
+		B49EC35B2951BCDC002FE1F8 /* DBRouletteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRouletteVC.m; sourceTree = "<group>"; };
+		B49EC35C2951BCDC002FE1F8 /* DBRouletteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRouletteVC.h; sourceTree = "<group>"; };
+		B49EC35E2951BCDC002FE1F8 /* LMCustomRouletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCustomRouletteView.m; sourceTree = "<group>"; };
+		B49EC35F2951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMVoiceRoomNewRouletteContentView.m; sourceTree = "<group>"; };
+		B49EC3602951BCDC002FE1F8 /* LMCustomRouletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCustomRouletteView.h; sourceTree = "<group>"; };
+		B49EC3612951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMVoiceRoomNewRouletteContentView.h; sourceTree = "<group>"; };
+		B49EC3662951BD0F002FE1F8 /* LoopScrollVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollVC.m; sourceTree = "<group>"; };
+		B49EC3672951BD0F002FE1F8 /* LoopScrollItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopScrollItemView.m; sourceTree = "<group>"; };
+		B49EC3682951BD0F002FE1F8 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		B49EC3692951BD0F002FE1F8 /* PlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerVC.h; sourceTree = "<group>"; };
+		B49EC36A2951BD0F002FE1F8 /* LoopScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollVC.h; sourceTree = "<group>"; };
+		B49EC36B2951BD0F002FE1F8 /* LoopScrollItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopScrollItemView.h; sourceTree = "<group>"; };
+		B49EC36C2951BD0F002FE1F8 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerVC.m; sourceTree = "<group>"; };
 		B88B8CCB268869A83CF107AD /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5025C6EFDE00341E59 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5325C6EFDE00341E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +144,42 @@
 			path = ScrolList;
 			sourceTree = "<group>";
 		};
+		B49EC35A2951BCDC002FE1F8 /* Roulette */ = {
+			isa = PBXGroup;
+			children = (
+				B49EC35B2951BCDC002FE1F8 /* DBRouletteVC.m */,
+				B49EC35C2951BCDC002FE1F8 /* DBRouletteVC.h */,
+				B49EC35D2951BCDC002FE1F8 /* View */,
+			);
+			path = Roulette;
+			sourceTree = "<group>";
+		};
+		B49EC35D2951BCDC002FE1F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B49EC35E2951BCDC002FE1F8 /* LMCustomRouletteView.m */,
+				B49EC35F2951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m */,
+				B49EC3602951BCDC002FE1F8 /* LMCustomRouletteView.h */,
+				B49EC3612951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B49EC3652951BD0F002FE1F8 /* LoopScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B49EC3662951BD0F002FE1F8 /* LoopScrollVC.m */,
+				B49EC3672951BD0F002FE1F8 /* LoopScrollItemView.m */,
+				B49EC3682951BD0F002FE1F8 /* PlayerView.m */,
+				B49EC3692951BD0F002FE1F8 /* PlayerVC.h */,
+				B49EC36A2951BD0F002FE1F8 /* LoopScrollVC.h */,
+				B49EC36B2951BD0F002FE1F8 /* LoopScrollItemView.h */,
+				B49EC36C2951BD0F002FE1F8 /* PlayerView.h */,
+				B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */,
+			);
+			path = LoopScroll;
+			sourceTree = "<group>";
+		};
 		F763BB4725C6EFDE00341E59 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +211,8 @@
 				F763BB5725C6EFDE00341E59 /* SceneDelegate.m */,
 				F763BB5925C6EFDE00341E59 /* ViewController.h */,
 				F763BB5A25C6EFDE00341E59 /* ViewController.m */,
+				B49EC3652951BD0F002FE1F8 /* LoopScroll */,
+				B49EC35A2951BCDC002FE1F8 /* Roulette */,
 				B45EA9C627438902002F202D /* ScrolList */,
 				F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */,
 				F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */,
@@ -340,11 +399,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */,
+				B49EC3632951BCDC002FE1F8 /* LMCustomRouletteView.m in Sources */,
 				F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */,
+				B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */,
 				B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */,
+				B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */,
+				B49EC36E2951BD0F002FE1F8 /* LoopScrollVC.m in Sources */,
 				F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */,
+				B49EC36F2951BD0F002FE1F8 /* LoopScrollItemView.m in Sources */,
+				B49EC3622951BCDC002FE1F8 /* DBRouletteVC.m in Sources */,
 				B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
+				B49EC3642951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m in Sources */,
 				F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

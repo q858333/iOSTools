@@ -16,7 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.list = @[@{@"title":@"模仿高德首页列表滑动效果",@"class":@"DBScrollListVC"}];
+    self.list = @[@{@"title":@"模仿高德首页列表滑动效果",@"class":@"DBScrollListVC"},
+                  @{@"title":@"无限循环",@"class":@"LoopScrollVC"},
+                  @{@"title":@"转盘、饼状图",@"class":@"DBRouletteVC"}];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.delegate = self;
