@@ -17,6 +17,7 @@
 		B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC3682951BD0F002FE1F8 /* PlayerView.m */; };
 		B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */; };
 		D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B8CCB268869A83CF107AD /* libPods-Tools.a */; };
+		ECD3B5692974F94100E9E809 /* DBImageEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B5682974F94100E9E809 /* DBImageEditVC.m */; };
 		F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5425C6EFDE00341E59 /* AppDelegate.m */; };
 		F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5725C6EFDE00341E59 /* SceneDelegate.m */; };
 		F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5A25C6EFDE00341E59 /* ViewController.m */; };
@@ -68,6 +69,8 @@
 		B49EC36C2951BD0F002FE1F8 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerVC.m; sourceTree = "<group>"; };
 		B88B8CCB268869A83CF107AD /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD3B5672974F94100E9E809 /* DBImageEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBImageEditVC.h; sourceTree = "<group>"; };
+		ECD3B5682974F94100E9E809 /* DBImageEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBImageEditVC.m; sourceTree = "<group>"; };
 		F763BB5025C6EFDE00341E59 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5325C6EFDE00341E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F763BB5425C6EFDE00341E59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,6 +183,15 @@
 			path = LoopScroll;
 			sourceTree = "<group>";
 		};
+		ECD3B5662974F91900E9E809 /* ImageEdit */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3B5672974F94100E9E809 /* DBImageEditVC.h */,
+				ECD3B5682974F94100E9E809 /* DBImageEditVC.m */,
+			);
+			path = ImageEdit;
+			sourceTree = "<group>";
+		};
 		F763BB4725C6EFDE00341E59 = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +223,7 @@
 				F763BB5725C6EFDE00341E59 /* SceneDelegate.m */,
 				F763BB5925C6EFDE00341E59 /* ViewController.h */,
 				F763BB5A25C6EFDE00341E59 /* ViewController.m */,
+				ECD3B5662974F91900E9E809 /* ImageEdit */,
 				B49EC3652951BD0F002FE1F8 /* LoopScroll */,
 				B49EC35A2951BCDC002FE1F8 /* Roulette */,
 				B45EA9C627438902002F202D /* ScrolList */,
@@ -405,6 +418,7 @@
 				B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */,
 				B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */,
 				B49EC36E2951BD0F002FE1F8 /* LoopScrollVC.m in Sources */,
+				ECD3B5692974F94100E9E809 /* DBImageEditVC.m in Sources */,
 				F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */,
 				B49EC36F2951BD0F002FE1F8 /* LoopScrollItemView.m in Sources */,
 				B49EC3622951BCDC002FE1F8 /* DBRouletteVC.m in Sources */,
