@@ -1402,50 +1402,77 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
         newRange.location = _selectedTextRange.start.offset + text.length;
         _selectedTextRange = [YYTextRange rangeWithRange:newRange];
         if (notify) [_inputDelegate selectionDidChange:self];
+        
     } else {
         if (range.asRange.length != text.length) {
             if (notify) [_inputDelegate selectionWillChange:self];
             NSRange unionRange = NSIntersectionRange(_selectedTextRange.asRange, range.asRange);
-            if (unionRange.length == 0) {
-                // no intersection
+            if (unionRange.length == 0) { // no intersection
                 if (range.end.offset <= _selectedTextRange.start.offset) {
                     NSInteger ofs = (NSInteger)text.length - (NSInteger)range.asRange.length;
                     NSRange newRange = _selectedTextRange.asRange;
                     newRange.location += ofs;
                     _selectedTextRange = [YYTextRange rangeWithRange:newRange];
+                    
                 }
-            } else if (unionRange.length == _selectedTextRange.asRange.length) {
-                // target range contains selected range
+                
+            } else if (unionRange.length == _selectedTextRange.asRange.length) { // target range contains selected range
                 _selectedTextRange = [YYTextRange rangeWithRange:NSMakeRange(range.start.offset + text.length, 0)];
-            } else if (range.start.offset >= _selectedTextRange.start.offset &&
-                       range.end.offset <= _selectedTextRange.end.offset) {
-                // target range inside selected range
+                
+            } else if (range.start.offset >= _selectedTextRange.start.offset && range.end.offset <= _selectedTextRange.end.offset) { // target range inside selected range
                 NSInteger ofs = (NSInteger)text.length - (NSInteger)range.asRange.length;
                 NSRange newRange = _selectedTextRange.asRange;
                 newRange.length += ofs;
                 _selectedTextRange = [YYTextRange rangeWithRange:newRange];
-            } else {
-                // interleaving
+                
+            } else { // interleaving
                 if (range.start.offset < _selectedTextRange.start.offset) {
                     NSRange newRange = _selectedTextRange.asRange;
                     newRange.location = range.start.offset + text.length;
                     newRange.length -= unionRange.length;
                     _selectedTextRange = [YYTextRange rangeWithRange:newRange];
+                    
                 } else {
                     NSRange newRange = _selectedTextRange.asRange;
                     newRange.length -= unionRange.length;
                     _selectedTextRange = [YYTextRange rangeWithRange:newRange];
+                    
                 }
+                
             }
-            _selectedTextRange = [self _correctedTextRange:_selectedTextRange];
             if (notify) [_inputDelegate selectionDidChange:self];
+            
         }
+        
     }
     if (notify) [_inputDelegate textWillChange:self];
     NSRange newRange = NSMakeRange(range.asRange.location, text.length);
     [_innerText replaceCharactersInRange:range.asRange withString:text];
     [_innerText removeDiscontinuousAttributesInRange:newRange];
+    _selectedTextRange = [self _correctedTextRange:_selectedTextRange];
     if (notify) [_inputDelegate textDidChange:self];
+    
+}
+
+-(void)insertDictationResult:(NSArray<UIDictationPhrase *> *)dictationResult{
+// _preparingDictation = NO;
+NSMutableString *phraseResult = @"".mutableCopy;
+for (UIDictationPhrase *phrase in dictationResult) {
+[phraseResult appendString:phrase.text];
+}
+[self insertText:phraseResult];
+}
+
+-(void)dictationRecordingDidEnd{
+// _preparingDictation = YES;
+NSLog(@"dictationRecordingDidEnd，，，");
+}
+-(id)insertDictationResultPlaceholder{
+return nil;//如果不实现则insertDictationResult的插入文本会被覆盖
+}
+
+-(void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult{
+//do nothing 相应的由于实现了insertDictationResultPlaceholder，则这里识别完毕后删除也不需要做任何事情
 }
 
 /// Save current typing attributes to the attributes holder.
