@@ -20,17 +20,32 @@
 @property (nonatomic, strong) UIImageView *originImgView;//原始图片
 
 @property (nonatomic, strong) UIView *maskView;
+@property (nonatomic, strong) YYTextView *textView;
+
 @end
 
 @implementation DBImageEditVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     NSLog(@"EditVC --- %@--%@",NSStringFromCGSize(self.originImg.size),self.navigationController.viewControllers);
     self.originImg = [UIImage imageNamed:@"beam_topview_exchange_index"];
     
     self.view.backgroundColor = [UIColor blackColor];
     [self configView];
+    
+    YYTextView *text = [[YYTextView alloc] init];
+    [self.view addSubview:text];
+    text.frame = CGRectMake(100, 100, 100, 100);
+    text.backgroundColor = [UIColor redColor];
+    text.delegate = self;
+    self.textView = text;
+}
+
+-(void)textViewDidChangeSelection:(YYTextView *)textView{
+    NSRange range = NSMakeRange(textView.text.length, 0);
+    self.textView.selectedRange = range;
 }
 
 - (void)configView{
@@ -116,7 +131,7 @@
     
     // 底部视图
     CGFloat bottomHeight = 60; //+ [LiveMeCommon tabbarBottomOffset];
-    UIView *bottomView = [self bulidBottomViewWithFrame:CGRectMake(0, kScreenHeight - bottomHeight, kScreenWidth, bottomHeight)];
+    UIView *bottomView = [self bulidBottomViewWithFrame:CGRectMake(0, 20, kScreenWidth, bottomHeight)];
     bottomView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
     [self.view addSubview:bottomView];
 
@@ -140,7 +155,6 @@
         make.left.mas_equalTo(15);
         
     }];
-    
     
     
     UIButton *finishButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -168,6 +182,8 @@
 
     }
     
+    self.textView.text = @"";
+
 }
 
 
