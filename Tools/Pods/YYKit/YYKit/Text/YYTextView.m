@@ -1396,13 +1396,14 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
 /// Replace the range with the text, and change the `_selectTextRange`.
 /// The caller should make sure the `range` and `text` are valid before call this method.
 - (void)_replaceRange:(YYTextRange *)range withText:(NSString *)text notifyToDelegate:(BOOL)notify{
+    NSLog(@"1111");
     if (NSEqualRanges(range.asRange, _selectedTextRange.asRange)) {
         if (notify) [_inputDelegate selectionWillChange:self];
         NSRange newRange = NSMakeRange(0, 0);
         newRange.location = _selectedTextRange.start.offset + text.length;
         _selectedTextRange = [YYTextRange rangeWithRange:newRange];
         if (notify) [_inputDelegate selectionDidChange:self];
-        
+        NSLog(@"2222");
     } else {
         if (range.asRange.length != text.length) {
             if (notify) [_inputDelegate selectionWillChange:self];
@@ -1440,40 +1441,45 @@ typedef NS_ENUM(NSUInteger, YYTextMoveDirection) {
                 }
                 
             }
+//            _selectedTextRange = [self _correctedTextRange:_selectedTextRange];
             if (notify) [_inputDelegate selectionDidChange:self];
-            
+            NSLog(@"3333");
         }
-        
+        NSLog(@"444");
     }
     if (notify) [_inputDelegate textWillChange:self];
     NSRange newRange = NSMakeRange(range.asRange.location, text.length);
-    [_innerText replaceCharactersInRange:range.asRange withString:text];
-    [_innerText removeDiscontinuousAttributesInRange:newRange];
+    if(range.asRange.length + range.asRange.location > _innerText.length && range.asRange.location == 0) {
+        [_innerText replaceCharactersInRange:NSMakeRange(0,_innerText.length) withString:text];
+    } else {
+        [_innerText replaceCharactersInRange:range.asRange withString:text];
+    }
     _selectedTextRange = [self _correctedTextRange:_selectedTextRange];
+    [_innerText removeDiscontinuousAttributesInRange:newRange];
     if (notify) [_inputDelegate textDidChange:self];
     
 }
 
--(void)insertDictationResult:(NSArray<UIDictationPhrase *> *)dictationResult{
+//-(void)insertDictationResult:(NSArray<UIDictationPhrase *> *)dictationResult{
 // _preparingDictation = NO;
-NSMutableString *phraseResult = @"".mutableCopy;
-for (UIDictationPhrase *phrase in dictationResult) {
-[phraseResult appendString:phrase.text];
-}
-[self insertText:phraseResult];
-}
-
--(void)dictationRecordingDidEnd{
+//NSMutableString *phraseResult = @"".mutableCopy;
+//for (UIDictationPhrase *phrase in dictationResult) {
+//[phraseResult appendString:phrase.text];
+//}
+//[self insertText:phraseResult];
+//}
+//
+//-(void)dictationRecordingDidEnd{
 // _preparingDictation = YES;
-NSLog(@"dictationRecordingDidEnd，，，");
-}
--(id)insertDictationResultPlaceholder{
-return nil;//如果不实现则insertDictationResult的插入文本会被覆盖
-}
-
--(void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult{
-//do nothing 相应的由于实现了insertDictationResultPlaceholder，则这里识别完毕后删除也不需要做任何事情
-}
+//NSLog(@"dictationRecordingDidEnd，，，");
+//}
+//-(id)insertDictationResultPlaceholder{
+//return nil;//如果不实现则insertDictationResult的插入文本会被覆盖
+//}
+//
+//-(void)removeDictationResultPlaceholder:(id)placeholder willInsertResult:(BOOL)willInsertResult{
+////do nothing 相应的由于实现了insertDictationResultPlaceholder，则这里识别完毕后删除也不需要做任何事情
+//}
 
 /// Save current typing attributes to the attributes holder.
 - (void)_updateAttributesHolder {

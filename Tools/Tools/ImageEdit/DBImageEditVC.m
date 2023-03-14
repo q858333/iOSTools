@@ -181,7 +181,8 @@
         self.originImgView.image = image;
 
     }
-    
+    self.textView.selectedRange = NSMakeRange(0, 0);
+    self.textView.attributedText = nil;
     self.textView.text = @"";
 
 }

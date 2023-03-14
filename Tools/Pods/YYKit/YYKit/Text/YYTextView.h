@@ -89,6 +89,8 @@ NS_ASSUME_NONNULL_BEGIN
  Get the value returns the plain text in `attributedText`.
  */
 @property (null_resettable, nonatomic, copy) NSString *text;
+@property (nonatomic, assign) BOOL preparingDictation;
+
 
 /**
  The font of the text. Default is 12-point system font.

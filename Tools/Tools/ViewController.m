@@ -19,7 +19,10 @@
     self.list = @[@{@"title":@"模仿高德首页列表滑动效果",@"class":@"DBScrollListVC"},
                   @{@"title":@"无限循环",@"class":@"LoopScrollVC"},
                   @{@"title":@"转盘、饼状图",@"class":@"DBRouletteVC"},
-                  @{@"title":@"图片裁切",@"class":@"DBImageEditVC"}];
+                  @{@"title":@"图片裁切",@"class":@"DBImageEditVC"},
+                  @{@"title":@"输入框",@"class":@"DBImageEditVC"},
+
+    ];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     tableView.delegate = self;
