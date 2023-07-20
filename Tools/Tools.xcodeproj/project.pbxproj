@@ -17,9 +17,15 @@
 		B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC3682951BD0F002FE1F8 /* PlayerView.m */; };
 		B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */; };
 		D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88B8CCB268869A83CF107AD /* libPods-Tools.a */; };
+		EC2BF1632A5937A200D22D7D /* DBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2BF1622A5937A200D22D7D /* DBTableViewCell.m */; };
 		EC2D897D29C0276800894BE0 /* DBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D897C29C0276800894BE0 /* DBTextView.m */; };
 		EC2D898029C027B300894BE0 /* DBChatTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D897F29C027B300894BE0 /* DBChatTextView.m */; };
+		EC5AE7062A53C4B800D6D1E1 /* pk_loading.webp in Resources */ = {isa = PBXBuildFile; fileRef = EC5AE7052A53C4B800D6D1E1 /* pk_loading.webp */; };
+		EC5AE8802A57F43800D6D1E1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5AE87F2A57F43700D6D1E1 /* CoreText.framework */; };
+		EC5AE8A52A5801C000D6D1E1 /* LMLightLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5AE8A42A5801C000D6D1E1 /* LMLightLabel.m */; };
+		ECA9CCC12A42FC1B0051BC6E /* DBAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA9CCC02A42FC1B0051BC6E /* DBAnimationVC.m */; };
 		ECD3B5692974F94100E9E809 /* DBImageEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B5682974F94100E9E809 /* DBImageEditVC.m */; };
+		ECE62D6E2A68DF8F00259AFB /* DBThreadQueueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */; };
 		F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5425C6EFDE00341E59 /* AppDelegate.m */; };
 		F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5725C6EFDE00341E59 /* SceneDelegate.m */; };
 		F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5A25C6EFDE00341E59 /* ViewController.m */; };
@@ -71,12 +77,22 @@
 		B49EC36C2951BD0F002FE1F8 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
 		B49EC36D2951BD0F002FE1F8 /* PlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerVC.m; sourceTree = "<group>"; };
 		B88B8CCB268869A83CF107AD /* libPods-Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2BF1612A5937A200D22D7D /* DBTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTableViewCell.h; sourceTree = "<group>"; };
+		EC2BF1622A5937A200D22D7D /* DBTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTableViewCell.m; sourceTree = "<group>"; };
 		EC2D897B29C0276700894BE0 /* DBTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTextView.h; sourceTree = "<group>"; };
 		EC2D897C29C0276800894BE0 /* DBTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBTextView.m; sourceTree = "<group>"; };
 		EC2D897E29C027B300894BE0 /* DBChatTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBChatTextView.h; sourceTree = "<group>"; };
 		EC2D897F29C027B300894BE0 /* DBChatTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBChatTextView.m; sourceTree = "<group>"; };
+		EC5AE7052A53C4B800D6D1E1 /* pk_loading.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = pk_loading.webp; sourceTree = "<group>"; };
+		EC5AE87F2A57F43700D6D1E1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EC5AE8A32A5801BF00D6D1E1 /* LMLightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLightLabel.h; sourceTree = "<group>"; };
+		EC5AE8A42A5801C000D6D1E1 /* LMLightLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLightLabel.m; sourceTree = "<group>"; };
+		ECA9CCBF2A42FC1B0051BC6E /* DBAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBAnimationVC.h; sourceTree = "<group>"; };
+		ECA9CCC02A42FC1B0051BC6E /* DBAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBAnimationVC.m; sourceTree = "<group>"; };
 		ECD3B5672974F94100E9E809 /* DBImageEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBImageEditVC.h; sourceTree = "<group>"; };
 		ECD3B5682974F94100E9E809 /* DBImageEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBImageEditVC.m; sourceTree = "<group>"; };
+		ECE62D6C2A68DF8F00259AFB /* DBThreadQueueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBThreadQueueVC.h; sourceTree = "<group>"; };
+		ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBThreadQueueVC.m; sourceTree = "<group>"; };
 		F763BB5025C6EFDE00341E59 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5325C6EFDE00341E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F763BB5425C6EFDE00341E59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5AE8802A57F43800D6D1E1 /* CoreText.framework in Frameworks */,
 				D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +154,7 @@
 		590D7499D56C022A44BEC5C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC5AE87F2A57F43700D6D1E1 /* CoreText.framework */,
 				B88B8CCB268869A83CF107AD /* libPods-Tools.a */,
 			);
 			name = Frameworks;
@@ -200,6 +218,17 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
+		ECA9CCBE2A42FC040051BC6E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				ECA9CCBF2A42FC1B0051BC6E /* DBAnimationVC.h */,
+				ECA9CCC02A42FC1B0051BC6E /* DBAnimationVC.m */,
+				EC2BF1612A5937A200D22D7D /* DBTableViewCell.h */,
+				EC2BF1622A5937A200D22D7D /* DBTableViewCell.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		ECD3B5662974F91900E9E809 /* ImageEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +269,11 @@
 				F763BB5725C6EFDE00341E59 /* SceneDelegate.m */,
 				F763BB5925C6EFDE00341E59 /* ViewController.h */,
 				F763BB5A25C6EFDE00341E59 /* ViewController.m */,
+				EC5AE8A32A5801BF00D6D1E1 /* LMLightLabel.h */,
+				EC5AE8A42A5801C000D6D1E1 /* LMLightLabel.m */,
+				ECE62D6C2A68DF8F00259AFB /* DBThreadQueueVC.h */,
+				ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */,
+				ECA9CCBE2A42FC040051BC6E /* Animation */,
 				EC2D897A29C0273300894BE0 /* TextView */,
 				ECD3B5662974F91900E9E809 /* ImageEdit */,
 				B49EC3652951BD0F002FE1F8 /* LoopScroll */,
@@ -251,6 +285,7 @@
 				F763BB5F25C6EFE000341E59 /* Assets.xcassets */,
 				F763BB6125C6EFE000341E59 /* LaunchScreen.storyboard */,
 				F763BB6425C6EFE000341E59 /* Info.plist */,
+				EC5AE7052A53C4B800D6D1E1 /* pk_loading.webp */,
 				F763BB6525C6EFE000341E59 /* main.m */,
 			);
 			path = Tools;
@@ -380,6 +415,7 @@
 				F763BB6325C6EFE000341E59 /* LaunchScreen.storyboard in Resources */,
 				F763BB6025C6EFE000341E59 /* Assets.xcassets in Resources */,
 				F763BB5E25C6EFDE00341E59 /* Main.storyboard in Resources */,
+				EC5AE7062A53C4B800D6D1E1 /* pk_loading.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */,
+				EC2BF1632A5937A200D22D7D /* DBTableViewCell.m in Sources */,
 				B49EC3632951BCDC002FE1F8 /* LMCustomRouletteView.m in Sources */,
+				ECE62D6E2A68DF8F00259AFB /* DBThreadQueueVC.m in Sources */,
 				F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */,
 				EC2D898029C027B300894BE0 /* DBChatTextView.m in Sources */,
 				B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */,
@@ -444,6 +482,8 @@
 				B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
 				EC2D897D29C0276800894BE0 /* DBTextView.m in Sources */,
+				EC5AE8A52A5801C000D6D1E1 /* LMLightLabel.m in Sources */,
+				ECA9CCC12A42FC1B0051BC6E /* DBAnimationVC.m in Sources */,
 				B49EC3642951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m in Sources */,
 				F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */,
 			);

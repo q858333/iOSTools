@@ -7,14 +7,17 @@
 
 #import "DBScrollListVC.h"
 #import "DBScrollListView.h"
-@interface DBScrollListVC ()
+#import <CoreHaptics/CoreHaptics.h>
 
+@interface DBScrollListVC ()
 @end
 
 @implementation DBScrollListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     CGFloat viewHeight = CGRectGetHeight(self.view.frame);
     
     CGFloat topOffset = 110;
