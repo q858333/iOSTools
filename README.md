@@ -11,5 +11,5 @@
   
 * [隐私配置文档2](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)
 
-* [隐私配置文档3]([https://developer.apple.com/documentation/bundleresources/privacy_manifest_files](https://www.6hu.cc/archives/243323.html))
+* [隐私配置文档3](https://www.6hu.cc/archives/243323.html))
 
