@@ -36,6 +36,9 @@
 		F763BB7025C6EFE000341E59 /* ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB6F25C6EFE000341E59 /* ToolsTests.m */; };
 		F763BB7B25C6EFE000341E59 /* ToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB7A25C6EFE000341E59 /* ToolsUITests.m */; };
 		F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */; };
+		F7A6221429CA0430003A8023 /* DBOpenGLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6221329CA0430003A8023 /* DBOpenGLVC.m */; };
+		F7A6221C29CA0621003A8023 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A6221B29CA0620003A8023 /* OpenGLES.framework */; };
+		F7A6222229CA174B003A8023 /* 邓斌.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7A6222129CA174B003A8023 /* 邓斌.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,10 @@
 		F763BB7C25C6EFE000341E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSafeMutableDictionary.m; sourceTree = "<group>"; };
 		F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSafeMutableDictionary.h; sourceTree = "<group>"; };
+		F7A6221229CA0430003A8023 /* DBOpenGLVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBOpenGLVC.h; sourceTree = "<group>"; };
+		F7A6221329CA0430003A8023 /* DBOpenGLVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLVC.m; sourceTree = "<group>"; };
+		F7A6221B29CA0620003A8023 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F7A6222129CA174B003A8023 /* 邓斌.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "邓斌.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +129,7 @@
 			files = (
 				EC5AE8802A57F43800D6D1E1 /* CoreText.framework in Frameworks */,
 				D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */,
+				F7A6221C29CA0621003A8023 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5AE87F2A57F43700D6D1E1 /* CoreText.framework */,
+				F7A6221B29CA0620003A8023 /* OpenGLES.framework */,
 				B88B8CCB268869A83CF107AD /* libPods-Tools.a */,
 			);
 			name = Frameworks;
@@ -274,6 +283,8 @@
 				ECE62D6C2A68DF8F00259AFB /* DBThreadQueueVC.h */,
 				ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */,
 				ECA9CCBE2A42FC040051BC6E /* Animation */,
+				F7A6222129CA174B003A8023 /* 邓斌.JPG */,
+				F7A6221129CA041C003A8023 /* OpenGL */,
 				EC2D897A29C0273300894BE0 /* TextView */,
 				ECD3B5662974F91900E9E809 /* ImageEdit */,
 				B49EC3652951BD0F002FE1F8 /* LoopScroll */,
@@ -307,6 +318,15 @@
 				F763BB7C25C6EFE000341E59 /* Info.plist */,
 			);
 			path = ToolsUITests;
+			sourceTree = "<group>";
+		};
+		F7A6221129CA041C003A8023 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				F7A6221229CA0430003A8023 /* DBOpenGLVC.h */,
+				F7A6221329CA0430003A8023 /* DBOpenGLVC.m */,
+			);
+			path = OpenGL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A6222229CA174B003A8023 /* 邓斌.JPG in Resources */,
 				F763BB6325C6EFE000341E59 /* LaunchScreen.storyboard in Resources */,
 				F763BB6025C6EFE000341E59 /* Assets.xcassets in Resources */,
 				F763BB5E25C6EFDE00341E59 /* Main.storyboard in Resources */,
@@ -480,6 +501,7 @@
 				B49EC36F2951BD0F002FE1F8 /* LoopScrollItemView.m in Sources */,
 				B49EC3622951BCDC002FE1F8 /* DBRouletteVC.m in Sources */,
 				B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */,
+				F7A6221429CA0430003A8023 /* DBOpenGLVC.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
 				EC2D897D29C0276800894BE0 /* DBTextView.m in Sources */,
 				EC5AE8A52A5801C000D6D1E1 /* LMLightLabel.m in Sources */,

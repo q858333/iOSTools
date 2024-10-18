@@ -24,7 +24,8 @@
                   @{@"title":@"输入框",@"class":@"DBImageEditVC"},
                   @{@"title":@"动画",@"class":@"DBAnimationVC"},
                   @{@"title":@"线程、队列",@"class":@"DBThreadQueueVC"},
-                  
+                  @{@"title":@"opengl",@"class":@"DBOpenGLVC"},
+
     ];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
