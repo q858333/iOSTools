@@ -26,6 +26,13 @@
 		ECA9CCC12A42FC1B0051BC6E /* DBAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA9CCC02A42FC1B0051BC6E /* DBAnimationVC.m */; };
 		ECD3B5692974F94100E9E809 /* DBImageEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD3B5682974F94100E9E809 /* DBImageEditVC.m */; };
 		ECE62D6E2A68DF8F00259AFB /* DBThreadQueueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */; };
+		F733335F2CC2A8930075BA32 /* DBOpenGLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F73333552CC2A8930075BA32 /* DBOpenGLVC.m */; };
+		F73333602CC2A8930075BA32 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F73333592CC2A8930075BA32 /* libmp3lame.a */; };
+		F73333612CC2A8930075BA32 /* DBAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F733335B2CC2A8930075BA32 /* DBAudioPlayer.m */; };
+		F73333622CC2A8930075BA32 /* DBRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F733335C2CC2A8930075BA32 /* DBRecordVC.m */; };
+		F73333642CC2A9520075BA32 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F73333632CC2A9510075BA32 /* 1.jpg */; };
+		F733336A2CC2A9920075BA32 /* DBCoverFlowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F73333662CC2A9920075BA32 /* DBCoverFlowVC.m */; };
+		F733336B2CC2A9920075BA32 /* DBCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F73333692CC2A9920075BA32 /* DBCoverFlowLayout.m */; };
 		F763BB5525C6EFDE00341E59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5425C6EFDE00341E59 /* AppDelegate.m */; };
 		F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5725C6EFDE00341E59 /* SceneDelegate.m */; };
 		F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB5A25C6EFDE00341E59 /* ViewController.m */; };
@@ -36,9 +43,7 @@
 		F763BB7025C6EFE000341E59 /* ToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB6F25C6EFE000341E59 /* ToolsTests.m */; };
 		F763BB7B25C6EFE000341E59 /* ToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB7A25C6EFE000341E59 /* ToolsUITests.m */; };
 		F763BB8D25C6F24B00341E59 /* DBSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */; };
-		F7A6221429CA0430003A8023 /* DBOpenGLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6221329CA0430003A8023 /* DBOpenGLVC.m */; };
 		F7A6221C29CA0621003A8023 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A6221B29CA0620003A8023 /* OpenGLES.framework */; };
-		F7A6222229CA174B003A8023 /* 邓斌.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F7A6222129CA174B003A8023 /* 邓斌.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +101,19 @@
 		ECD3B5682974F94100E9E809 /* DBImageEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBImageEditVC.m; sourceTree = "<group>"; };
 		ECE62D6C2A68DF8F00259AFB /* DBThreadQueueVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBThreadQueueVC.h; sourceTree = "<group>"; };
 		ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBThreadQueueVC.m; sourceTree = "<group>"; };
+		F73333552CC2A8930075BA32 /* DBOpenGLVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLVC.m; sourceTree = "<group>"; };
+		F73333562CC2A8930075BA32 /* DBOpenGLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOpenGLVC.h; sourceTree = "<group>"; };
+		F73333592CC2A8930075BA32 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		F733335A2CC2A8930075BA32 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		F733335B2CC2A8930075BA32 /* DBAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAudioPlayer.m; sourceTree = "<group>"; };
+		F733335C2CC2A8930075BA32 /* DBRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRecordVC.m; sourceTree = "<group>"; };
+		F733335D2CC2A8930075BA32 /* DBAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAudioPlayer.h; sourceTree = "<group>"; };
+		F733335E2CC2A8930075BA32 /* DBRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBRecordVC.h; sourceTree = "<group>"; };
+		F73333632CC2A9510075BA32 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F73333662CC2A9920075BA32 /* DBCoverFlowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoverFlowVC.m; sourceTree = "<group>"; };
+		F73333672CC2A9920075BA32 /* DBCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoverFlowLayout.h; sourceTree = "<group>"; };
+		F73333682CC2A9920075BA32 /* DBCoverFlowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCoverFlowVC.h; sourceTree = "<group>"; };
+		F73333692CC2A9920075BA32 /* DBCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCoverFlowLayout.m; sourceTree = "<group>"; };
 		F763BB5025C6EFDE00341E59 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763BB5325C6EFDE00341E59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F763BB5425C6EFDE00341E59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,10 +134,7 @@
 		F763BB7C25C6EFE000341E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F763BB8B25C6F24B00341E59 /* DBSafeMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSafeMutableDictionary.m; sourceTree = "<group>"; };
 		F763BB8C25C6F24B00341E59 /* DBSafeMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSafeMutableDictionary.h; sourceTree = "<group>"; };
-		F7A6221229CA0430003A8023 /* DBOpenGLVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBOpenGLVC.h; sourceTree = "<group>"; };
-		F7A6221329CA0430003A8023 /* DBOpenGLVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBOpenGLVC.m; sourceTree = "<group>"; };
 		F7A6221B29CA0620003A8023 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		F7A6222129CA174B003A8023 /* 邓斌.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "邓斌.JPG"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5AE8802A57F43800D6D1E1 /* CoreText.framework in Frameworks */,
+				F73333602CC2A8930075BA32 /* libmp3lame.a in Frameworks */,
 				D50BAE5AEAC9AD674B751929 /* libPods-Tools.a in Frameworks */,
 				F7A6221C29CA0621003A8023 /* OpenGLES.framework in Frameworks */,
 			);
@@ -247,6 +263,48 @@
 			path = ImageEdit;
 			sourceTree = "<group>";
 		};
+		F73333542CC2A8930075BA32 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				F73333552CC2A8930075BA32 /* DBOpenGLVC.m */,
+				F73333562CC2A8930075BA32 /* DBOpenGLVC.h */,
+				F73333632CC2A9510075BA32 /* 1.jpg */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		F73333572CC2A8930075BA32 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				F73333582CC2A8930075BA32 /* framework */,
+				F733335B2CC2A8930075BA32 /* DBAudioPlayer.m */,
+				F733335C2CC2A8930075BA32 /* DBRecordVC.m */,
+				F733335D2CC2A8930075BA32 /* DBAudioPlayer.h */,
+				F733335E2CC2A8930075BA32 /* DBRecordVC.h */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		F73333582CC2A8930075BA32 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				F73333592CC2A8930075BA32 /* libmp3lame.a */,
+				F733335A2CC2A8930075BA32 /* lame.h */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		F73333652CC2A9920075BA32 /* CoverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F73333662CC2A9920075BA32 /* DBCoverFlowVC.m */,
+				F73333672CC2A9920075BA32 /* DBCoverFlowLayout.h */,
+				F73333682CC2A9920075BA32 /* DBCoverFlowVC.h */,
+				F73333692CC2A9920075BA32 /* DBCoverFlowLayout.m */,
+			);
+			path = CoverFlow;
+			sourceTree = "<group>";
+		};
 		F763BB4725C6EFDE00341E59 = {
 			isa = PBXGroup;
 			children = (
@@ -282,9 +340,10 @@
 				EC5AE8A42A5801C000D6D1E1 /* LMLightLabel.m */,
 				ECE62D6C2A68DF8F00259AFB /* DBThreadQueueVC.h */,
 				ECE62D6D2A68DF8F00259AFB /* DBThreadQueueVC.m */,
+				F73333652CC2A9920075BA32 /* CoverFlow */,
+				F73333542CC2A8930075BA32 /* OpenGL */,
+				F73333572CC2A8930075BA32 /* Record */,
 				ECA9CCBE2A42FC040051BC6E /* Animation */,
-				F7A6222129CA174B003A8023 /* 邓斌.JPG */,
-				F7A6221129CA041C003A8023 /* OpenGL */,
 				EC2D897A29C0273300894BE0 /* TextView */,
 				ECD3B5662974F91900E9E809 /* ImageEdit */,
 				B49EC3652951BD0F002FE1F8 /* LoopScroll */,
@@ -318,15 +377,6 @@
 				F763BB7C25C6EFE000341E59 /* Info.plist */,
 			);
 			path = ToolsUITests;
-			sourceTree = "<group>";
-		};
-		F7A6221129CA041C003A8023 /* OpenGL */ = {
-			isa = PBXGroup;
-			children = (
-				F7A6221229CA0430003A8023 /* DBOpenGLVC.h */,
-				F7A6221329CA0430003A8023 /* DBOpenGLVC.m */,
-			);
-			path = OpenGL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,10 +482,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7A6222229CA174B003A8023 /* 邓斌.JPG in Resources */,
 				F763BB6325C6EFE000341E59 /* LaunchScreen.storyboard in Resources */,
 				F763BB6025C6EFE000341E59 /* Assets.xcassets in Resources */,
 				F763BB5E25C6EFDE00341E59 /* Main.storyboard in Resources */,
+				F73333642CC2A9520075BA32 /* 1.jpg in Resources */,
 				EC5AE7062A53C4B800D6D1E1 /* pk_loading.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +543,7 @@
 				F763BB5B25C6EFDE00341E59 /* ViewController.m in Sources */,
 				EC2D898029C027B300894BE0 /* DBChatTextView.m in Sources */,
 				B49EC3712951BD0F002FE1F8 /* PlayerVC.m in Sources */,
+				F73333612CC2A8930075BA32 /* DBAudioPlayer.m in Sources */,
 				B45EA9CF27438990002F202D /* DBScrollListVC.m in Sources */,
 				B49EC3702951BD0F002FE1F8 /* PlayerView.m in Sources */,
 				B49EC36E2951BD0F002FE1F8 /* LoopScrollVC.m in Sources */,
@@ -501,13 +552,16 @@
 				B49EC36F2951BD0F002FE1F8 /* LoopScrollItemView.m in Sources */,
 				B49EC3622951BCDC002FE1F8 /* DBRouletteVC.m in Sources */,
 				B45EA9D5274389AF002F202D /* DBScrollListView.m in Sources */,
-				F7A6221429CA0430003A8023 /* DBOpenGLVC.m in Sources */,
 				F763BB6625C6EFE000341E59 /* main.m in Sources */,
+				F733336B2CC2A9920075BA32 /* DBCoverFlowLayout.m in Sources */,
 				EC2D897D29C0276800894BE0 /* DBTextView.m in Sources */,
+				F73333622CC2A8930075BA32 /* DBRecordVC.m in Sources */,
 				EC5AE8A52A5801C000D6D1E1 /* LMLightLabel.m in Sources */,
 				ECA9CCC12A42FC1B0051BC6E /* DBAnimationVC.m in Sources */,
 				B49EC3642951BCDC002FE1F8 /* LMVoiceRoomNewRouletteContentView.m in Sources */,
+				F733335F2CC2A8930075BA32 /* DBOpenGLVC.m in Sources */,
 				F763BB5825C6EFDE00341E59 /* SceneDelegate.m in Sources */,
+				F733336A2CC2A9920075BA32 /* DBCoverFlowVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +741,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tools/Record/framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DB.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -705,6 +763,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tools/Record/framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = DB.Tools;
 				PRODUCT_NAME = "$(TARGET_NAME)";

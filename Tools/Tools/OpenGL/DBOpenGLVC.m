@@ -55,7 +55,7 @@
 
 - (void)setupTexture {
 //    [GLKTextureInfo]
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"邓斌" ofType:@"JPG"] ;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"JPG"] ;
     GLKTextureInfo *loader=  [GLKTextureLoader textureWithContentsOfFile:path options:@{
         GLKTextureLoaderOriginBottomLeft:@1
     } error:nil];

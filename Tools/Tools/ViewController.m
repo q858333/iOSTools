@@ -25,6 +25,8 @@
                   @{@"title":@"动画",@"class":@"DBAnimationVC"},
                   @{@"title":@"线程、队列",@"class":@"DBThreadQueueVC"},
                   @{@"title":@"opengl",@"class":@"DBOpenGLVC"},
+                  @{@"title":@"CoverFlow效果",@"class":@"DBCoverFlowVC"},
+                  @{@"title":@"录音",@"class":@"DBRecordVC"},
 
     ];
     
