@@ -15,9 +15,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"播放器";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
     // Do any additional setup after loading the view.
     [self.view  addSubview:self.player];
     self.player.frame = self.view.bounds;
+    self.player.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+}
+
+- (void)goBack {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

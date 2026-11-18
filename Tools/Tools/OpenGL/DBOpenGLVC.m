@@ -55,10 +55,20 @@
 
 - (void)setupTexture {
 //    [GLKTextureInfo]
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"JPG"] ;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"jpg"];
+    myEffect.texture2d0.enabled = GL_FALSE;
+    if (!path) {
+        NSLog(@"OpenGL 纹理资源 1.jpg 不存在");
+        return;
+    }
+    NSError *error = nil;
     GLKTextureInfo *loader=  [GLKTextureLoader textureWithContentsOfFile:path options:@{
         GLKTextureLoaderOriginBottomLeft:@1
-    } error:nil];
+    } error:&error];
+    if (!loader) {
+        NSLog(@"OpenGL 纹理加载失败：%@", error.localizedDescription);
+        return;
+    }
     myEffect.texture2d0.enabled = GL_TRUE;
     myEffect.texture2d0.name = loader.name;
 

@@ -71,14 +71,29 @@
     player.frame = CGRectMake(0, 0, kScreenWidth, 100);
     [player start];
     self.player = player;
+    __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        typeof(self) self = weakSelf;
+        if (!self.view.window || self.presentedViewController) { return; }
         [self.player removeFromSuperview];
 //        [self.view addSubview:player];
 //        player.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
         PlayerVC *playervc = [[PlayerVC alloc] init];
         playervc.player = self.player;
-        [self presentViewController:playervc animated:YES completion:nil];
+        playervc.edgesForExtendedLayout = UIRectEdgeNone;
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:playervc];
+        navigationController.navigationBar.translucent = NO;
+        navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:navigationController animated:YES completion:nil];
     });
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (self.player.superview != self.scrollView) {
+        [self.scrollView addSubview:self.player];
+        self.player.frame = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), 100);
+    }
 }
 
 - (void)fixiOS11:(UIScrollView *)scrollview{

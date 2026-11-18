@@ -1,10 +1,11 @@
 # Uncomment this line to define a global platform for your project
 
-platform :ios, '10.0'
+platform :ios, '15.6'
 
 target 'Tools' do
   pod 'YYKit'
   pod 'Masonry'
   pod 'ReactiveObjC'
+  pod 'GLTFKit2', :path => 'LocalPods/GLTFKit2'
 
 end

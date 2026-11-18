@@ -27,6 +27,7 @@
                   @{@"title":@"opengl",@"class":@"DBOpenGLVC"},
                   @{@"title":@"CoverFlow效果",@"class":@"DBCoverFlowVC"},
                   @{@"title":@"录音",@"class":@"DBRecordVC"},
+                  @{@"title":@"3D 模型演示",@"class":@"DBThreeDVC"},
 
     ];
     
@@ -118,11 +119,21 @@
     NSDictionary * dic = [self.list objectAtIndex:indexPath.row];
     Class class = NSClassFromString(dic[@"class"]);
     UIViewController *vc = [[class alloc] init];
-    vc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:vc animated:YES completion:nil];
+    vc.title = dic[@"title"];
+    vc.edgesForExtendedLayout = UIRectEdgeNone;
+    vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(returnToHome)];
+    vc.navigationItem.backButtonTitle = @"返回";
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    navigationController.navigationBar.translucent = NO;
+    navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:navigationController animated:YES completion:nil];
     
     
 }
 
+
+- (void)returnToHome {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

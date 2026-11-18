@@ -1,0 +1,19 @@
+{
+  "name": "GLTFKit2",
+  "version": "0.5.15",
+  "summary": "glTF model loading for SceneKit and RealityKit.",
+  "homepage": "https://github.com/warrenm/GLTFKit2",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "Warren Moore",
+  "source": {
+    "http": "https://github.com/warrenm/GLTFKit2/releases/download/0.5.15/GLTFKit2.xcframework.zip",
+    "sha256": "9d0c338282acce4986494aa02a5f1495278f56c60d43f31453fefea6875b4928"
+  },
+  "platforms": {
+    "ios": "15.6"
+  },
+  "vendored_frameworks": "GLTFKit2.xcframework"
+}

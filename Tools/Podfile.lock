@@ -1,4 +1,5 @@
 PODS:
+  - GLTFKit2 (0.5.15)
   - Masonry (1.1.0)
   - ReactiveObjC (3.1.1)
   - YYKit (1.0.9):
@@ -6,6 +7,7 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - GLTFKit2 (from `LocalPods/GLTFKit2`)
   - Masonry
   - ReactiveObjC
   - YYKit
@@ -16,11 +18,16 @@ SPEC REPOS:
     - ReactiveObjC
     - YYKit
 
+EXTERNAL SOURCES:
+  GLTFKit2:
+    :path: LocalPods/GLTFKit2
+
 SPEC CHECKSUMS:
+  GLTFKit2: f4d17c07fb689f25339693073d8318667072e48e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 36f3f4bcf0fa44a8fc0f09f9696dd9a375d99b5f
+PODFILE CHECKSUM: b0c85b5ceb4fee1a80475f2f197a60e2a1f0a957
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.16.2

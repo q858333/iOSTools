@@ -27,9 +27,6 @@
     dispatch_sync(self.serialQueue, ^{
         for (int i = 0; i < 2; i++) {
             NSLog(@"block1 %@", [NSThread currentThread]);
-            if(1 == i) {
-                [self KSserialQueueAsync];
-            }
             
         }
     });
